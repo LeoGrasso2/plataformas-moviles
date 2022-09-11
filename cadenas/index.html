@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario y contraseña</title>
 </head>
+<style>
+    .loginForm{
+        display:flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+</style>
 <body>
     <h1>Inicio de sesión</h1>
-    <form action="">
+    <form class="loginForm" action="">
         <label for="user">Usuario</label>
         <input type="text" value="Ingrese usuario" id="user" required>
         <label for="pass">Contraseña</label>
         <input type="password" id="pass" required>
-        
-
     </form>
     <script src="js/main.js"></script>
 </body>

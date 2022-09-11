@@ -14,8 +14,12 @@ function checkPass(){
     let pass = document.getElementById('pass').value;
     let lastChar = pass.slice(-1);
     console.log(pass);
-
-    if(pass.match(/A-Z]/g)){
+    let valid = '<div>falta mayus!</div>';
+    if(!/[A-Z]/.test(pass)){
+        console.log('la clave debe tener una mayuscula como mínimo');
+    }
+    else{
         console.log('sipi');
     }
+    
 }
